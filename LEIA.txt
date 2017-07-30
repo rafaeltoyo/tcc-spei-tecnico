@@ -1,0 +1,19 @@
+# 	TCC - POSTNOTES 	#
+# 	-- GRUPO -- 		#
+# 	Arthur Chimchek 		#
+# 	Rafael Akira Ueda 		#
+# 	Rafael Hideo Toyomoto	#
+# 	Victor Gabriel Ayala		#
+
+# Site PostNotes:
+	Site principal de nosso sistema.
+# Site Tecnorav:
+	Site de nossa empresa.
+# Site Admin PostNotes:
+	Site de relatórios do administrator do sistema.
+# VS PostNotes for Desktop:
+	Projeto no Visual Studio (C#) do aplicativo desktop do nosso sistema, rodando no sistema Windows.
+# AS PostNotes for Mobile:
+	Projeto no Android Studio (XML + Java) do aplicativo mobile do nosso sistema, rodando no sistema android.
+
+:)

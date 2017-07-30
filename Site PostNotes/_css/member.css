@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+div#center_box {
+    display: block;
+    overflow: hidden;
+
+    margin: 0 auto 50px auto;
+
+    width: 100%;
+
+    box-shadow: 0 0 10px #000000;
+}
+
+
+h1 {
+    margin: 20px;
+
+    text-align: center;
+    font-size: 18pt;
+    color: #303030;
+}
+
+
+div#List {
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    width: 800px;
+    height: 500px;
+
+    margin: 20px auto;
+    padding: 20px 10px;
+
+    border: 1px dashed #505050;
+    border-radius: 15px;
+}
+div#List ul {
+    list-style: none;
+}
+div#List li {
+    overflow: hidden;
+
+    text-align: center;
+
+    margin: 5px;
+}
+div#List li#requests_body {
+    width: 790px;
+    height: 70px;
+
+    background-color: #b2dbc5;
+}
+div#List li#requests_body ul li {
+    display: table-cell;
+
+    width: 150px;
+    max-height: 70px;
+
+    background-color: rgba(0,0,0,.1);
+}
+div#List li#requests_body ul li#user_name {
+    display: table-cell;
+
+    width: 490px;
+    max-height: 70px;
+
+    margin: auto;
+
+    background-color: rgba(0,0,0,.15);
+
+    word-wrap: break-word;
+
+    font-size: 12pt;
+}
+div#List li#requests_body ul li input {
+    width: 150px;
+    height: 70px;
+
+    border: none;
+
+    transition: background-color .4s;
+}
+div#List li#requests_body ul li input[value=Accept],[value=Aceitar] {
+    background-color: rgb(62, 170, 66);
+}
+div#List li#requests_body ul li input[value=Refuse],[value=Recusar] {
+    background-color: rgb(186, 85, 65);
+}
+div#List li#requests_body ul li input[value=Accept]:hover,[value=Aceitar]:hover {
+    background-color: rgb(54, 134, 57);
+}
+div#List li#requests_body ul li input[value=Refuse]:hover,[value=Recusar]:hover {
+    background-color: rgb(170, 68, 63);
+}

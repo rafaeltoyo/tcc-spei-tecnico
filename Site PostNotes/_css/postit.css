@@ -1,0 +1,407 @@
+@charset "UTF-8";
+
+div#center_box {
+    display: block;
+    overflow: hidden;
+
+    margin: 0 auto 50px auto;
+
+    width: 100%;
+
+    box-shadow: 0 0 10px #000000;
+}
+/* CSS DO MENU DAS NOTES */
+div#menu_notes {
+    width: 100%;
+    height: 50px;
+
+    background-color: #505050;
+}
+div#menu_notes div#menu_notes_interior {
+    width: 900px;
+
+    margin: 0 auto;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista {
+    list-style: none;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li {
+    display: table-cell;
+
+    height: 50px;
+
+    font-size: 12pt;
+    color: #E0E0E0;
+    text-align: center;
+    vertical-align: middle;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li label {
+    color: #E0E0E0;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li a {
+    color: #E0E0E0;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_title {
+    width: 200px;
+    background-color: #454545;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_filtro {
+    width: 300px;
+    border-right: 1px dashed #454545;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_search {
+    width: 100px;
+    border-right: 1px dashed #454545;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_create {
+    width: 150px;
+    border-right: 1px dashed #454545;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_view {
+    width: 150px;
+    border-right: 1px dashed #454545;
+
+    transition: background-color .4s;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_view:hover {
+    background-color: #454545;
+}
+
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_filtro input[type=submit] {
+    width: 25px;
+    height: 25px;
+
+    background: url("../_images/search_icon.png") 50% 50% no-repeat #C1C1C1;
+
+    color: transparent;
+
+    border: 1px solid rgba(0,0,0,.1);
+
+    transition: background-color .4s;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li input[type=button] {
+    width: 130px;
+    height: 35px;
+
+    background-color: #C1C1C1;
+
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+
+    transition: background-color .4s;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li.menu_notes_filtro input[type=submit]:hover , div#menu_notes div#menu_notes_interior ul#menu_notes_lista  li input[type=button]:hover {
+    background-color: #999999;
+}
+
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista li.menu_notes_search input[type=submit] {
+    width: 80px;
+    height: 40px;
+
+    background-color: #d65c48;
+    border: none;
+    border-radius: 15px;
+
+    font-size: 12pt;
+
+    color: white;
+
+    transition: background-color .4s;
+}
+div#menu_notes div#menu_notes_interior ul#menu_notes_lista li.menu_notes_search input[type=submit]:hover {
+    background-color: #ba5541;
+}
+
+
+/* CSS do filtro de pesquisa */
+div#center_box div#Filter {
+    width: 600px;
+
+    margin: 20px auto;
+}
+div#center_box div#Filter ul {
+    list-style: none;
+
+    width: 600px;
+}
+div#center_box div#Filter ul h1 {
+    display: none;
+}
+div#center_box div#Filter ul li {
+    display: table-cell;
+
+    height: 40px;
+
+    border: 1px dashed rgba(0,0,0,.2);
+
+    font-size: 14pt;
+    text-align: center;
+    vertical-align: middle;
+}
+div#center_box div#Filter ul li input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+
+    background-color: #C1C1C1;
+
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+}
+div#center_box div#Filter ul li input[type=submit], div#center_box div#Filter ul li input[type=button] {
+    width: 130px;
+    height: 35px;
+
+    background-color: #C1C1C1;
+
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 15px;
+
+    transition: background-color .4s;
+}
+div#center_box div#Filter ul li input[type=submit]:hover, div#center_box div#Filter ul li input[type=button]:hover {
+    background-color: #999999;
+}
+
+
+/* CSS Lista de membros */
+div#MemberList {
+    display: inline-block;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    border: none;
+
+    text-align: center;
+
+    transition: height .4s;
+}
+div#MemberList h1 {
+    display: none;
+}
+div#MemberList ul {
+    list-style: none;
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+div#MemberList li {
+    display: inline-block;
+
+    margin: 3px;
+    padding: 5px;
+
+    border: 1px solid #505050;
+}
+div#MemberList input {
+    width: 20px;
+    height: 20px;
+
+    background-color: #d65c48;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12pt;
+    font-weight: bolder;
+}
+div#MemberList input:hover {
+    background-color: #ba5541;
+}
+
+/* CSS Filtro retrátil de tempo */
+div#TimeFilter {
+    width: 100%;
+    height: 0;
+
+    overflow: hidden;
+
+    border: none;
+
+    text-align: center;
+
+    transition: height .4s;
+}
+div#TimeFilter h1 {
+    display: none;
+}
+div#TimeFilter ul {
+    list-style: none;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* CSS da tabela de notas */
+div#center_box div#notes_group {
+    margin: 50px auto 50px auto;
+    padding-right: 5px;
+
+    width: 820px;
+    height: 500px;
+
+    overflow-y: scroll;
+    overflow-x:hidden;
+
+    border: 1px dashed rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+div#center_box div#notes_group ul {
+    list-style: none;
+}
+div#center_box div#notes_group ul li#notes_body {
+    display: inline-block;
+
+    margin: 5px 0 5px 5px;
+
+    width: 800px;
+    height: 100px;
+
+    background-color: #ffdc40;
+    border: 1px solid transparent;
+}
+div#center_box div#notes_group ul li#notes_body:hover {
+    border: 1px solid #b08730;
+}
+div#center_box div#notes_group p#empty {
+    margin: 50px auto;
+
+    text-align: center;
+    font-size: 14pt;
+
+    word-wrap: break-word;
+}
+div#center_box div#notes_group li#notes_body ul {
+    list-style: none;
+}
+div#center_box div#notes_group li#notes_body ul li {
+    display: table-cell;
+
+    word-wrap: break-word;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_button {
+    max-width: 90px;
+    min-width: 90px;
+    height: 100px;
+
+    background-color: #ff9f2f;
+
+    text-align: center;
+    vertical-align: middle;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_button input {
+    width: 75px;
+    height: 75px;
+
+    margin: auto;
+
+    border: none;
+    border-radius: 20px;
+
+    font-size: 24pt;
+    font-weight: bolder;
+
+    cursor: pointer;
+
+    transition: background-color .4s;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_button input[value='x'] {
+    background-color: #3eaa42;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_button input[value='+'] {
+    background-color: #d65c48;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_button input[value='x']:hover {
+    background-color: #368639;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_button input[value='+']:hover {
+    background-color: #ba5541;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_text {
+    max-width: 300px;
+    min-width: 300px;
+
+    padding: 5px;
+
+    border-right: 1px dashed rgba(0,0,0,.1);
+
+    text-align: justify;
+    font-size: 12pt;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_creator {
+    max-width: 150px;
+    min-width: 150px;
+
+    padding: 5px;
+
+    background-color: rgba(0,0,0,.01);
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12pt;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_time {
+    max-width: 150px;
+    min-width: 150px;
+
+    padding: 5px;
+
+    border-left: 1px dashed rgba(0,0,0,.1);
+
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10pt;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_time input[type=button]{
+    width: 100px;
+    height: 20px;
+
+    margin: 2px;
+
+    background-color: #ff9f2f;
+    border: none;
+
+    font-size: 10pt;
+    color: #FFFFFF;
+
+    cursor: pointer;
+
+    transition: background-color .4s;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_time input[type=button]:hover{
+    background-color: #e67e39;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_delet {
+    max-width: 50px;
+    min-width: 50px;
+
+    padding: 5px;
+
+    border-left: 1px dashed rgba(0,0,0,.1);
+
+    text-align: right;
+    vertical-align: top;
+    font-size: 10pt;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_delet input {
+    width: 20px;
+    height: 20px;
+
+    background-color: #d65c48;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12pt;
+    font-weight: bolder;
+}
+div#center_box div#notes_group li#notes_body ul li#notes_delet input:hover {
+    background-color: #ba5541;
+}
+div#center_box h1 {
+    margin: 30px 0 0 0;
+
+    font-size:18pt;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+}

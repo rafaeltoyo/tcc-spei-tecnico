@@ -1,0 +1,262 @@
+@charset "UTF-8";
+/* CONFIG DE DESIGN DAS P�GINAS DE ADMIN */
+* {
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+}
+body {
+    background-color: #EEEECC;
+}
+
+/* CONFIG DO CABEÇALHO */
+header#top {
+    background-color: rgba(0,0,0,.1);
+    border-top: 1px solid #667755;
+    border-bottom: 1px solid #667755;
+    padding: 0px 20px;
+    font-family: "Arial";
+}
+header#top h1 {
+    color: #444422;
+    font-size: 24pt;
+}
+header#top h2 {
+    color: #444422;
+    font-size: 14pt;
+}
+header#top h3 {
+    color: #888866;
+    font-size: 8pt;
+}
+
+/* CORPO DO SITE */
+div#body {
+    background-color: #DDEEDD;
+    width: 900px;
+    min-height: 100%;
+    margin: 0px auto 0px auto;
+    padding-top: 100px;
+}
+section#corpo {
+    display: block;
+    width: 300px;
+    float: left;
+    padding: 20px 10px 20px 10px;
+    border-right: 1px solid #667755;
+}
+aside#lateral {
+    display: block;
+    width: 550px;
+    float: right;
+    padding: 10px;
+}
+footer#rodape {
+    background-color: #667755;
+    padding: 20px;
+    clear: both;
+}
+/* CONFIG DO MENU SUPERIRO */
+nav#menu {
+    width:100%;
+}
+nav#menu ul {
+    width:100%;
+    background-color: #667755;
+    position: absolute;
+    top: 0px;
+    list-style-type: none;
+}
+nav#menu li {
+    background-color: #667755;
+    display: inline-block;
+    margin: 2px;
+    padding: 10px;
+    transition: background-color 1s, color 1s;
+
+    font-size: 12pt;
+    color: #FFFFDD;
+}
+nav#menu li:hover {
+    background-color: #455639;
+    color: #EEEECC;
+}
+nav#menu h1 {
+    display:none;
+}
+nav#menu a {
+    text-decoration: none;
+    color: #222200;
+    font-size: 14pt;
+    transition: color 1s;
+}
+nav#menu a:hover {
+    color: #888866;
+}
+
+/* CONFIG DE TEXTO DO SITE */
+#conteudo h1{
+    text-align: center;
+    font-size: 16pt;
+    color: #444422;
+    margin: 5px;
+}
+#conteudo h2{
+    text-align: center;
+    font-size: 14pt;
+    color: #444422;
+    margin: 5px;
+}
+#conteudo p {
+    margin: 5px;
+    text-align: justify;
+    font-size: 12pt;
+    color: #444422;
+}
+#conteudo a {
+    padding: 1px;
+    background-color: rgba(0,0,0,.1);
+    color: #444422;
+}
+#conteudo a:hover {
+    padding: 1px;
+    background-color: rgba(0,0,0,.15);
+    color: #444422;
+}
+/* CONFIG DE FORM */
+fieldset {
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #667755;
+    border-radius: 15px;
+}
+fieldset p {
+    text-align: center;
+}
+legend {
+    text-align: center;
+    font-size: 14pt;
+    color: #444422;
+}
+input[type=text],input[type=password],input[type=number],select {
+    background-color: #FFFFEE;
+    color: #888866;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    margin: 2px 0px 2px 0px;
+    transition: background-color .2s, color .2s;
+}
+input[type=text]:hover ,input[type=password]:hover ,input[type=number]:hover ,select:hover {
+    background-color: #888866;
+    color: #FFFFEE;
+}
+input[type=text]:invalid ,input[type=password]:invalid ,input[type=number]:invalid ,select:invalid {
+    background-color: #EEEECC;
+    border: 1px double rgba(255, 0, 0, 0.9);
+    box-shadow: 0px 0px 5px rgba(255, 0, 0, 0.9);
+}
+
+input[type=submit] {
+    margin: 5px;
+    background-color: #444422;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 70px;
+    height: 45px;
+    font-size: 14pt;
+    color: #EEEECC;
+    transition: background-color .2s, color .2s;
+}
+input[type=submit]:hover {
+    background-color: #667755;
+    color: #444422;
+}
+input[type=button] {
+    background-color: #444422;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 30px;
+    font-size: 9pt;
+    color: #EEEECC;
+    transition: background-color .2s;
+}
+input[type=button]:hover {
+    background-color: #888866;
+}
+
+input[type=button] {
+    background-color: #444422;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    width: 30px;
+    font-size: 9pt;
+    color: #EEEECC;
+    transition: background-color .2s;
+}
+input[type=button]:hover{
+    background-color: #888866;
+}
+
+fieldset#busca {
+    width: 300px;
+    margin: 10px auto 10px -130px;
+}
+/* CONFIG DA TABLE RELATORIO */
+table#relatorio {
+    margin: 0px auto 0px auto;
+    width: 400px;
+}
+table#relatorio td {
+    padding: 2px;
+    background-color: #FFFFEE;
+    border: 1px solid #FFFFDD;
+    width: 400px;
+    text-align:center;
+}
+table#usuariosR {
+    margin: 0px auto 0px auto;
+}
+table#usuariosR td {
+    padding: 2px;
+    background-color: #FFFFEE;
+    border: 1px solid #FFFFDD;
+    max-width: 200px;
+    text-align:center;
+}
+/* CHANGELOG */
+table#cl_main {
+    width: 650px;
+    margin: 2% auto;
+
+    background-color: #667755;
+
+    border: 1px solid transparent;
+
+    color: rgba(0,0,0,.7);
+    font-size: 12pt;
+}
+table#cl_main tr {
+    width: 10%;
+
+    margin: 0px auto;
+    padding: 2px;
+
+    text-align: center;
+}
+table#cl_main td {
+    background-color: rgba(255,255,255,.5);
+
+    padding: 5px;
+
+    border: 3px solid transparent;
+
+    font-size: 12pt;
+}
+table#cl_main td[colspan="3"] {
+    background-color: rgba(255,255,255,.3);
+
+    font-size: 14pt;
+}
+table#cl_main th {
+    background-color: rgba(255,255,255,.4);
+}

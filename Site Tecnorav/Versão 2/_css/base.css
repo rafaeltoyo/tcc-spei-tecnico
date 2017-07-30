@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CONFIG DE DESIGN DAS PÁGINAS DE ADMIN */
+* {
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    text-align: center;
+}
+body {
+    background-color: #cceeff;
+}
+
+header#top h1 {
+    color: #112747;
+    font-size: 24pt;
+}
+header#top h2 {
+    color: #143d66;
+    font-size: 14pt;
+}
+header#top h3 {
+    color: #143d66;
+    font-size: 8pt;
+}
+
+/* CORPO DO SITE */
+nav#menu {
+    width: 100%;
+    height: 50px;
+    background-color: #34578d;
+}
+nav#menu div#menu_corpo {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #34578d;
+}
+nav#menu div#menu_corpo ul {
+    list-style: none;
+}
+nav#menu div#menu_corpo ul a li{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    transition: all .4s;
+}
+
+nav#menu div#menu_corpo ul a li:hover {
+    background-color: rgba(0,0,0,.1);
+}
+
+header {
+    width: 800px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #80c9ff;
+}
+header.login {
+    border-bottom: 1px solid #143d66;
+}
+div#corpo img {
+    width: 700px;
+    height: 200px;
+    margin: -30px auto 0 auto;
+}
+footer {
+    width: 800px;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #80c9ff;
+}
+div#corpo {
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+    background-color: #bbe1ff;
+}
+div#corpo fieldset#Login {
+    width: 250px;
+    margin: 10px auto;
+    padding: 20px 0 10px 0;
+    border: 1px dashed #143d66;
+    border-radius: 15px;
+}
+div#corpo fieldset#ReportSchedule {
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px 0 10px 0;
+    border: 1px dashed #143d66;
+    border-radius: 15px;
+}
+
+div#corpo fieldset#ReportUser {
+    width: 400px;
+    margin: 10px auto;
+    padding: 20px 0 10px 0;
+    border: 1px dashed #143d66;
+    border-radius: 15px;
+}
+
+div#corpo fieldset p {
+    padding: 5px;
+}
+div#corpo fieldset input[type=text] , input[type=password] , div#corpo fieldset input[type=date] , div#corpo fieldset select  {
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 15px;
+
+}
+
+div#corpo fieldset table#login{
+    margin: 0px auto 0px auto ;
+}
+
+div#corpo fieldset table#reportSchedule{
+     margin: 0px auto 0px auto ;
+    height: 150px;
+ }
+
+div#corpo fieldset table#reportUser{
+    margin: 0px auto 0px auto ;
+    height: 180px;
+}
+
+div#corpo fieldset table#reportSchedule td{
+    margin: 0px auto 0px auto ;
+
+}
+
+div#corpo fieldset input[type=submit] , div#corpo fieldset input[type=button] {
+    width: 150px;
+    height: 40px;
+    padding: 5px;
+    background-color: #34578d;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    transition: all .4s;
+}
+div#corpo fieldset input[type=submit]:hover , div#corpo fieldset input[type=button]:hover {
+    background-color: #397bb6;
+    color: #E0E0E0;
+}
+div#corpo table#relatorio {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #34578d;
+}
+div#corpo table#relatorio tr {
+    width: 600px;
+}
+div#corpo table#relatorio th {
+    font-size: 16pt;
+    background-color: #E0E0E0;
+}
+div#corpo table#relatorio td {
+    font-size: 14pt;
+    background-color: #FFFFFF;
+}

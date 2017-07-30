@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Tw Cen MT";
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+body {
+    background-color: #FFFFFF;
+    background-image: none;
+}
+
+/* ROLAGEM */
+div#toLeft , div#toRight {
+	position: fixed;
+	
+	width: 50px;
+	height: 300px;
+	
+	background-color: rgba(210,210,210,.5);
+	
+	font-size: 16pt;
+	
+	transition: background-color .4s;
+}
+div#toLeft:hover , div#toRight:hover {
+	background-color: rgba(210,210,210,.8);
+}
+div#toRight {
+	margin-left: 750px;
+}
+div#setas {
+    display: table-cell;
+
+    text-align: center;
+    vertical-align: middle;
+
+    white-space: pre-wrap;
+
+    width: 50px;
+    height: 300px;
+}
+
+/* FRAME */
+ul#schedules_frame {
+
+    list-style: none;
+
+    margin-left: 60px;
+    margin-right: 50px;
+}
+ul#schedules_frame li#index {
+    display: table-cell;
+
+    min-width: 120px;
+    height: 290px;
+
+    background-color: #979797;
+    border: 5px solid #FFFFFF;
+    border-radius: 10px;
+
+    white-space: nowrap;
+
+    font-size: 12pt;
+    text-align: center;
+    vertical-align: middle;
+}
+ul#schedules_frame li#lastspace {
+    display: table-cell;
+
+    min-width: 150px;
+    height: 290px;
+
+    background-color: transparent;
+
+    white-space: nowrap;
+}
+ul#schedules_frame li#schedule {
+    display: table-cell;
+
+    min-width: 60px;
+    height: 290px;
+
+    background-color: #808080;
+    border: 5px solid #FFFFFF;
+	border-radius: 10px;
+
+    white-space: nowrap;
+
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+
+    transition: min-width .5s, font-size .5s;
+}
+ul#schedules_frame li#schedule:hover {
+    min-width: 200px;
+    max-width: 200px;
+    font-size: 16pt;
+}
+ul#schedules_frame li#schedule div {
+    display: table-cell;
+
+    text-align: center;
+    vertical-align: middle;
+
+    white-space: pre-wrap;
+
+    width: 200px;
+    height: 290px;
+}
+input[type=button]#createbutton {
+    width: 50px;
+    height: 50px;
+
+    background-color: #C1C1C1;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+    font-size: 18pt;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+input[type=button]#createbutton:hover {
+    border: 1px solid #888888;
+}
+/* FIM FRAME */

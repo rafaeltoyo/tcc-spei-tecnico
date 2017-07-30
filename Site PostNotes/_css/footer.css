@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+footer {
+    margin-top: 10px;
+
+    width: 100%;
+
+    padding: 20px 10px;
+
+    background-color: #505050;
+}
+li {
+    font-size: 12pt;
+}
+li.title {
+    font-size: 16pt;
+}
+ul#mapa_site li p {
+    font-size: 10pt;
+}
+ul#mapa_site li p.title_ul {
+    font-size: 12pt;
+}
+ul#mapa_site {
+    list-style: none;
+}
+ul#mapa_site li {
+    display: table-cell;
+}
+ul#mapa_site li , ul#mapa_site li p , ul#mapa_site a {
+    min-width: 100px;
+    text-align: center;
+    color: #ffffff;
+}
+ul#mapa_site a {
+    text-decoration: underline;
+}
+ul#mapa_site a:hover {
+    color: #E0E0E0;
+}
+ul#mapa_site li p {
+    margin-top: 10px;
+}

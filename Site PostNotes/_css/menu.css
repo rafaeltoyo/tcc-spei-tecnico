@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/*font-family: "Tw Cen MT Condensed";*/
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Tw Cen MT";
+    color: #3E3E3E;
+}
+
+/* BASE */
+nav {
+    margin-top: 10px;
+    width: 100%;
+}
+div#newmenu_body {
+    width: 900px;
+
+    margin: 0 auto;
+}
+
+/* CSS do login */
+.black_overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=80);
+}
+.white_content {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    width: 300px;
+    height: 400px;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+div.white_content form p {
+    margin: 20px auto;
+    font-size: 24pt;
+    text-align: center;
+}
+div.white_content form p input[type=text] , div.white_content form p input[type=password] {
+    width: 200px;
+    height: 30px;
+
+    margin: 0 auto;
+
+    background-color: #E0E0E0;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+
+    font-size: 12pt;
+    color: #757575;
+    text-align: center;
+
+    transition: background-color .4s, color .4s;
+}
+div.white_content form p input[type=text]:hover , div.white_content form p input[type=password]:hover {
+    background-color: #CFCFCF;
+    color: #505050;
+}
+div.white_content form p input[type=text]:focus , div.white_content form p input[type=password]:focus {
+    background-color: #D9D9D9;
+    color: #202020;
+}
+div.white_content form p input[type=submit] {
+    width: 220px;
+    height: 40px;
+
+    margin: 0 auto;
+
+    background-color: #373737;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 10px;
+
+    font-size: 12pt;
+    color: #E0E0E0;
+    text-align: center;
+
+    transition: background-color .4s;
+}
+div.white_content form p input[type=submit]:hover {
+    background-color: #474747;
+}
+
+
+/* CSS icones */
+img.icon {
+    width: 30px;
+    height: 30px;
+
+    opacity: .4;
+
+    transition: opacity .4s;
+}
+li:hover img.icon {
+    opacity: 1;
+}
+img:hover.icon {
+    opacity: 1;
+}
+
+
+
+/* Config das UL e LI */
+div#newmenu_body ul {
+    display: inline-block;
+    position: relative;
+    list-style: none;
+}
+div#newmenu_body ul.newmenu_left {
+    margin-left: 0;
+}
+div#newmenu_body ul.newmenu_right {
+    margin-left: auto;
+}
+div#newmenu_body ul li, div#newmenu_body ul a li {
+    display: inline-block;
+
+    height: 40px;
+
+    margin:5px;
+    padding: 5px;
+
+    border: 1px solid transparent;
+    border-bottom: 3px solid #C1C1C1;
+
+    font-size: 16pt;
+    text-transform: uppercase;
+    color: #C1C1C1;
+    text-align: center;
+
+    transition: color .4s , border .4s;
+
+    cursor: pointer;
+}
+div#newmenu_body ul li:hover , div#newmenu_body ul a li:hover {
+    border-bottom: 3px solid #373737;
+    color: #373737;
+}
+
+div#newmenu_body ul li.newmenu_login {
+    height: 40px;
+}
+div#newmenu_body ul li.newmenu_options {
+    width: 40px;
+}
+div#newmenu_body ul li.newmenu_options:hover {
+    border-top: 1px solid #373737;
+    border-right: 1px solid #373737;
+    border-left: 1px solid #373737;
+}
+div#newmenu_body ul li.newmenu_options ul {
+    display:none;
+
+    width: 200px;
+    height: auto;
+
+    background-color: rgba(0,0,0,.4);
+}
+div#newmenu_body ul li.newmenu_options:hover ul , div#newmenu_body ul li.newmenu_options.over ul , div#newmenu_body ul li.newmenu_options:focus ul , div#newmenu_body ul li.newmenu_options ul.active  {
+    display:block;
+    position: absolute;
+
+    margin: 10px 0 0 -156px;
+
+    border: 1px solid transparent;
+}
+div#newmenu_body ul li.newmenu_options ul li {
+    background-color: #FFFFFF;
+
+    display:table-cell;
+
+    margin: 0;
+
+    width: 200px;
+    height: 30px;
+
+    font-size: 10pt;
+
+    vertical-align: middle;
+}
+div#newmenu_body ul li.newmenu_options ul li:hover {
+    background-color: #E0E0E0;
+}
+
+@media only screen and (max-device-width: 800px) {
+    div#newmenu_body ul li, div#newmenu_body ul a li {
+        font-size: 0;
+        color: transparent;
+    }
+}

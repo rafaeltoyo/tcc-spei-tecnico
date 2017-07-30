@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Tw Cen MT";
+    text-decoration: none;
+}
+/* PG */
+div#schedules {
+    display: block;
+    overflow: hidden;
+
+    margin: 0 auto 50px auto;
+
+    width: 100%;
+
+    box-shadow: 0 0 10px #000000;
+}
+div#schedules h1 {
+    margin: 30px 0 0 0;
+
+    font-size:18pt;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+}
+div#schedules iframe {
+    overflow: hidden;
+
+    display: block;
+
+    width: 800px;
+    height: 300px;
+
+    border: none;
+}
+div#schedules iframe::-webkit-scrollbar {
+    display: none;
+}
+/* FIM PG */

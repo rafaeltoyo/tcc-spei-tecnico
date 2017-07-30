@@ -1,0 +1,203 @@
+/* latin */
+@font-face {
+    font-family: 'Rokkitt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Rokkitt'), url(http://fonts.gstatic.com/s/rokkitt/v8/bUl8SwwZZ2_DZ4GNYp5L7PY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+/* ESTILO ESTRUTURA BASE */
+div#corpo {
+    background-color: #bbe1ff;
+    width: 1000px;
+    min-height: 100%;
+    margin: 0px auto 20px auto;
+}
+header#cabecalho{
+    width: 100%;
+    height: 150px;
+    background: url("../_images/banner.png") no-repeat 50% 50%;
+    background-size: 100% auto ;
+}
+footer#rodape {
+    background-color: #34578d;
+    height: 50px;
+    padding: 20px;
+    clear: both;
+    color: #cceeff;
+    text-align: right;
+    vertical-align: text-bottom;
+}
+
+/* MAPA DO SITE */
+hgroup#titulo {
+    padding: 5px 10px 0px 10px;
+    border-bottom: 1px solid #34578d;
+    font-weight: normal;
+    text-decoration: none;
+}
+hgroup#titulo h1 {
+    color: #34578d;
+    font-size: 18pt;
+}
+hgroup#titulo h2 {
+    color: #397bb6;
+    font-size: 10pt;
+}
+
+/* ESTILO ESTRUTURA NOTICIA */
+section#img {
+    display: block;
+    width: 500px;
+    float: left;
+    padding: 20px 10px 20px 10px;
+    border-right: 1px solid #34578d;
+}
+section#img img {
+    width:100%;
+}
+aside#text {
+    display: block;
+    width: 425px;
+    float: right;
+    padding: 20px 20px 0px 0px;
+    color: #34578d;
+}
+aside#text h1{
+    font-size: 16pt;
+    text-align: center;
+    margin-bottom: 7px;
+}
+aside#text p{
+    font-size: 12pt;
+    text-indent: 30px;
+    text-align: justify;
+}
+/* MENU PRODUTOS */
+
+ul#produtos_img {
+    margin: 0px auto 0px auto;
+    width: 760px;
+    list-style-type: none;
+}
+ul#produtos_img li {
+    display: inline-block;
+    background-color: transparent;
+    background: url("../_images/notice1.png") no-repeat 50% 50%;
+    background-size: 100% 100%;
+
+    margin: 10px 25px 10px 25px;
+    background-color: #ffffff;
+    width: 200px;
+    height: 200px;
+
+    transition: .5s ease-in-out;
+}
+ul#produtos_img li:hover {
+    transform: scale(1.5,1.5);
+}
+ul#produtos_img h1 {
+    display: none;
+}
+
+
+/* CONFIG CONTATO */
+fieldset#contato {
+    color: #34578d;
+    width: 300px;
+    border: 1px solid #34578d;
+    border-radius: 5px;
+    margin: 30px auto 30px auto;
+}
+fieldset#nos {
+    color: #34578d;
+    width: 230px;
+    border: 1px solid #34578d;
+    border-radius: 5px;
+    margin: 30px auto 30px auto;
+}
+fieldset#contato legend {
+    margin: 5px;
+    text-align: center;
+    font-size: 24pt;
+}
+fieldset#nos legend {
+    font-size: 18pt;
+}
+fieldset#contato p {
+    background-color: rgba(0,0,0,.1);
+    width: 130px;
+    height: 30px;
+    border: 1px groove rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin: 15px auto 5px auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 12pt;
+}
+fieldset#contato p:hover {
+    background-color: rgba(0,0,0,.2);
+}
+fieldset#contato img {
+    width: 20px;
+    height: 20px;
+}
+fieldset#contato a {
+    text-decoration: none;
+    color: #34578d;
+}
+
+
+/* ESTILO MENU */
+nav#menu ul {
+    width:100%;
+    background-color: #80c9ff;
+    position: relative;
+    top: 0px;
+    list-style-type: none;
+}
+nav#menu li {
+    width: 100px;
+    background-color: #80c9ff;
+    display: inline-block;
+
+    margin: 5px 0px 0px 0px;
+    padding: 10px;
+    transition: all .5s;
+
+    border: 1px solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    color: #cceeff;
+    text-transform: uppercase;
+    text-align: center;
+}
+nav#menu li:hover,nav#menu li#default {
+    background-color: #65bdff;
+    color: #ffffff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+nav#menu li#default {
+    background-color: #bbe1ff;
+}
+nav#menu h1 {
+    display:none;
+}
+nav#menu a {
+    font-size: 14pt;
+    color: #fff;
+    font-style: normal;
+    text-decoration: none;
+}

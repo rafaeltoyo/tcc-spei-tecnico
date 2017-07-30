@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+/* LAYOUT BASE */
+div#center_box {
+    display: block;
+    overflow: hidden;
+
+    margin: 0 auto 50px auto;
+
+    width: 100%;
+
+    box-shadow: 0 0 10px #000000;
+}
+
+
+/* MENU DE FILTRO E OPÇÕES */
+div#filter_menu {
+    width: 100%;
+    height: 50px;
+
+    background-color: #505050;
+}
+div#filter_menu div#filter_menu_interior {
+    width: 900px;
+
+    margin: 0 auto;
+}
+div#filter_menu div#filter_menu_interior h1 {
+    display: none;
+}
+div#filter_menu div#filter_menu_interior ul {
+    list-style: none;
+}
+div#filter_menu div#filter_menu_interior ul li {
+    display: table-cell;
+
+    height: 50px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    transition: background-color .4s;
+}
+div#filter_menu div#filter_menu_interior ul li#filter_title {
+    width: 200px;
+
+    background-color: #454545;
+
+    font-size: 16pt;
+    color: #E0E0E0;
+}
+div#filter_menu div#filter_menu_interior ul li#filter_select {
+    width: 500px;
+
+    background-color: #505050;
+    border-right: 1px dashed #454545;
+
+    font-size: 14pt;
+    color: #E0E0E0;
+}
+div#filter_menu div#filter_menu_interior ul li#filter_create {
+    display: table-cell;
+
+    width: 200px;
+
+    background-color: #505050;
+    border-right: 1px dashed #454545;
+
+    font-size: 14pt;
+    color: #E0E0E0;
+}
+div#filter_menu div#filter_menu_interior ul li#filter_create input {
+    width: 195px;
+    height: 45px;
+
+    background-color: #C1C1C1;
+    border: none;
+
+    transition: background-color .4s;
+}
+div#filter_menu div#filter_menu_interior ul li#filter_create input:hover {
+    background-color: #999999;
+}
+/* BOTÃO SEARCH */
+div#filter_menu div#filter_menu_interior ul li input[type=submit] {
+    width: 25px;
+    height: 25px;
+
+    background: url("../_images/search_icon.png") 50% 50% no-repeat #C1C1C1;
+
+    color: transparent;
+
+    border: 1px solid rgba(0,0,0,.1);
+
+    transition: background-color .4s;
+}
+
+
+/* LISTA DE AGENDAS */
+div#schedule_group {
+    overflow-y: scroll;
+
+    width: 700px;
+    height: 500px;
+
+    border: 1px solid #454545;
+
+    margin: 10px auto;
+}
+div#schedule_group ul {
+    list-style: none;
+}
+div#schedule_group ul li#schedules_body {
+    height: 60px;
+
+    margin: 5px;
+
+    background-color: #88a4a4;
+    border: 1px solid transparent;
+}
+div#schedule_group ul li#schedules_body:hover {
+    background-color: #7f9c9c;
+}
+div#schedule_group ul li#schedules_body ul {
+    list-style: none;
+}
+div#schedule_group ul li#schedules_body ul li {
+    display: table-cell;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+div#schedule_group ul li#schedules_body ul li#schedules_text {
+    width: 360px;
+
+    border-right: 1px dashed rgba(0,0,0,.1);
+
+    color: #202020;
+}
+div#schedule_group ul li#schedules_body ul li#schedules_creator {
+    width: 203px;
+    color: #202020;
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button {
+    width: 110px;
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input {
+    width: 110px;
+    height: 60px;
+
+    background-color: rgba(0,0,0,.2);
+    border: none;
+
+    text-align: center;
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input:hover {
+    background-color: rgba(0,0,0,.1);
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input[value=Cancelar] {
+    background-color: rgb(181, 0, 13);
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input[value=Cancelar]:hover {
+    background-color: rgb(134, 0, 12);
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input[value=Cancel] {
+    background-color: rgb(181, 0, 13);
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input[value=Cancel]:hover {
+    background-color: rgb(134, 0, 12);
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input#cancel {
+    color: #ffffff;;
+    background-color: rgb(181, 0, 13);
+}
+div#schedule_group ul li#schedules_body ul li#schedule_button input#cancel:hover {
+    background-color: rgb(134, 0, 12);
+}

@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Tw Cen MT";
+    text-decoration: none;
+}
+body {
+    /*background-image: url("../_images/background.jpg");*/
+    background-color: white;
+}
+header#cabecalho {
+    display: block;
+
+    width: 100%;
+    height: 50px;
+}
+div#corpo {
+    display: block;
+    overflow: hidden;
+
+    margin: 0 auto 10px auto;
+
+    width: 100%;
+
+    box-shadow: 0 0 10px #000000;
+
+    transition: height .3s;
+}
+div#min_size {
+    display: block;
+
+    height: 900px;
+}
+
+
+/* ---------------- MENU IMGS ---------------- */
+div#fmenu {
+    width: 100%;
+    height: 500px;
+    margin: 0px;
+    padding: 0px;
+    background: url("../_images/notice0.jpg") no-repeat 50% 50%;
+    background-color: black;
+    transition: background-image .4s;
+}
+div#fmenu ul {
+	position: absolute;
+    margin-top: 440px;
+    height: 40px;
+    list-style: none;
+    text-transform: uppercase;
+}
+div#fmenu li {
+	width: 180px;
+    height: 40px;
+    display: table-cell;
+    padding: 10px;
+    margin-top: 0;
+    transition: background-color .6s;
+    text-align: center;
+	vertical-align:middle;
+}
+div#fmenu li.free {
+    background-color: #E0E0E0;
+}
+div#fmenu li.selected {
+    background-color: white;
+}
+div#fmenu li.free:hover {
+    background-color: #999999;
+}
+div#fmenu h1 {
+    display: none;
+}
+/* ---------------- DESCRIÇÃO ---------------- */
+div#conteudo {
+    display: block;
+
+    margin: 0 auto;
+
+    width: 800px;
+}
+div#conteudo h1 {
+    margin: 20px 0;
+    padding: 10px;
+
+    width: 100%;
+
+    font-family: "Tw Cen MT Condensed";
+    font-size: 20pt;
+    font-weight: bold;
+    text-align: center;
+
+    border-top: 1px dashed #303030;
+    border-bottom: 1px dashed #303030;
+}
+div#conteudo p {
+    font-size: 14pt;
+    text-align: justify;
+    text-indent: 50px;
+}
+/* ---------------- CADASTRAR ---------------- */
+div#tableRegister {
+    display: block;
+    overflow: hidden;
+
+    margin: 0 auto 50px auto;
+
+    width: 100%;
+
+    box-shadow: 0 0 10px #000000;
+
+    transition: height .3s;
+}
+div#tableRegister table {
+    margin: 50px auto 50px auto;
+
+    width: 600px;
+
+    border: 1px dashed rgba(0,0,0,.2);
+    border-radius: 5px;
+
+    font-size: 14pt;
+}
+div#tableRegister table td[colspan="2"] {
+    font-size: 18pt;
+}
+div#tableRegister table th {
+    padding: 5px 10px;
+
+    text-align: right;
+}
+div#tableRegister table td {
+    padding: 5px 10px;
+
+    text-align: center;
+}
+div#tableRegister input:not([type=submit]):not([type=button]), div#tableRegister select {
+    padding: 3px;
+
+    background-color: rgba(0,0,0,.1);
+
+    border: 1px solid transparent;
+    border-radius: 15px;
+
+    font-size: 12pt;
+    text-align: center;
+
+    transition: background-color .4s;
+}
+div#tableRegister select option {
+    border: 1px dashed rgba(0,0,0,.2);
+}
+div#tableRegister input:invalid, div#tableRegister select:invalid {
+    box-shadow: 0 0 2px red;
+}
+div#tableRegister input:not([type=submit]):not([type=button]):focus,  div#tableRegister select:focus {
+    background-color: rgba(0,0,0,.15);
+}
+div#tableRegister input:not([type=submit]):not([type=button]):hover,  div#tableRegister select:hover {
+    background-color: rgba(0,0,0,.2);
+}
+div#tableRegister input[type=submit], div#tableRegister input[type=button] {
+    width: 150px;
+    height: 40px;
+
+    background-color: rgba(0,0,0,.2);
+
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    font-size: 12pt;
+    text-align: center;
+
+    transition: background-color .4s;
+}
+div#tableRegister input[type=submit]:hover, div#tableRegister input[type=button]:hover {
+    background-color: rgba(0,0,0,.3);
+}
+/* ---------------- FIELDSET ---------------- */
+div#tableRegister fieldset {
+    margin: 30px auto;
+
+    width: 500px;
+
+    border: 1px dashed rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+div#tableRegister fieldset legend {
+    text-align: center;
+}
+div#tableRegister fieldset p {
+    padding: 10px;
+
+    text-align: center;
+}
+select option[disabled] {
+    display: none;
+}
